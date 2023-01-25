@@ -12,8 +12,12 @@ export const aboutData = [
     title: "About INNI TECH",
     description:
       "A company that specializes in creating user-centric digital experiences. Our team of experts in UI and UX research work closely with our clients to understand their unique needs and design software that is tailored to their specific audience.",
-    //image: ,
-    //image: ,
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+    alt: "People working with computers",
+    image1: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    alt1:"Woman and men siting in from a monitor showing code",
+    image2: "",
+    alt2: ""
   },
 ];
 
