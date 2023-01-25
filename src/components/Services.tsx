@@ -3,7 +3,7 @@ import { servicesData } from "../data";
 
 export const Services = () => {
   return (
-    <div className="container pt-6 mb-12 bg-dark">
+    <div className="container pt-6 pb-12 bg-dark">
       {servicesData.map((service) => (
         <div key={service.id} className="w-full text-light ">
           <h2>{service.title}</h2>
