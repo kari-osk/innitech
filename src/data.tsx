@@ -1,3 +1,5 @@
+
+
 export const heroData = [
   {
     id: 0,
@@ -67,15 +69,15 @@ export const teamData = [
     subtitle: "meet the team",
   },
 ];
-export const taglineData =[
+export const taglineData = [
   {
     id: 0,
     title: "From challenges to solutions, with the power of human creativity",
     button: "Book a meeting",
   },
-]
+];
 
-export const contactData= [
+export const contactData = [
   {
     id: 0,
     title: "Contact INNI TECH",

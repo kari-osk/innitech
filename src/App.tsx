@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import { About } from './components/About'
-import { Contact } from './components/Contact'
-import { Footer } from './components/Footer'
-import { Hero } from './components/Hero'
 import { Navbar } from './components/Navbar'
+import { About } from './components/About'
+import { Hero } from './components/Hero'
 import { Services } from './components/Services'
 import { Team } from './components/Team'
+import { Tagline } from './components/Tagline'
+import { Contact } from './components/Contact'
+
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
     <About />
     <Services />
     <Team /> 
+    <Tagline />
     <Contact />
-    <Footer />
     </>
     )
 }
