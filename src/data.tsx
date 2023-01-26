@@ -67,15 +67,17 @@ export const teamData = [
     subtitle: "meet the team",
   },
 ];
-
-export const contact = [
+export const taglineData =[
   {
     id: 0,
     title: "From challenges to solutions, with the power of human creativity",
     button: "Book a meeting",
   },
+]
+
+export const contactData= [
   {
-    id: 1,
+    id: 0,
     title: "Contact INNI TECH",
     subtitle: "Let's talk",
   },
