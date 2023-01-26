@@ -35,6 +35,8 @@ module.exports = {
       '5xl': '3.052rem',
       '6xl': '4rem',
       '7xl': '4.625rem',
+      '8xl': '6.25rem',
+      '9xl': '10.375rem',
     },
     colors: {
       'dark': '#0F0E0E',

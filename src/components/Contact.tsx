@@ -20,7 +20,7 @@ export const Contact = () => {
           <h3 className="text-orange font-semibold text-4xl">{contact.subtitle}</h3>
         </div>
       ))}
-      <div className="w-full flex flex-row justify-between pt-9 text-2xl ">
+      <div className="w-full md:max-w-[520px] mx-auto flex flex-row justify-between  pt-9 text-2xl ">
         <button className="">
           <EnvelopeSimple />
         </button>

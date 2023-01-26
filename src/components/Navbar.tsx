@@ -24,7 +24,7 @@ export const Navbar = () => {
       <div
         className={
           !nav
-            ? "bg-light fixed left-0 top-0 w-[70%] h-full border-r ease-in-out duration-500"
+            ? "bg-light fixed left-0 top-0 w-[70%] h-screen border-r ease-in-out duration-500"
             : "fixed left-[-100%] ease-in-out duration-200"
         }
       >
