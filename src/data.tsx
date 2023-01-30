@@ -1,11 +1,12 @@
-
+import Logo from '../src/assets/logo.svg';
 
 export const heroData = [
   {
     id: 0,
     description:
       "Whether you're looking to create a new app, website, or software platform, Inni Tech has the expertise and experience to bring your vision to life.",
-  },
+    image: Logo
+    },
 ];
 
 export const aboutData = [
@@ -81,6 +82,5 @@ export const contactData = [
   {
     id: 0,
     title: "Contact INNI TECH",
-    subtitle: "Let's talk",
   },
 ];

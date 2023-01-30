@@ -7,7 +7,7 @@ import { Services } from './components/Services'
 import { Team } from './components/Team'
 import { Tagline } from './components/Tagline'
 import { Contact } from './components/Contact'
-
+import 'aos/dist/aos.css';
 
 function App() {
   return (

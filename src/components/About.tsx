@@ -3,7 +3,7 @@ import { aboutData } from "../data";
 
 export const About = () => {
   return (
-    <>
+    <div data-aos="fade-up">
       {aboutData.map((about) => (
         <div key={about.id}>
             <h2 className="container pb-12 font-semibold ">{about.title}</h2>
@@ -22,6 +22,6 @@ export const About = () => {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };

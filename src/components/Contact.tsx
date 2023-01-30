@@ -7,9 +7,7 @@ import {
   InstagramLogo,
   YoutubeLogo,
 } from "phosphor-react";
-
-
-
+import Typewriter from "typewriter-effect";
 
 export const Contact = () => {
   return (
@@ -17,7 +15,15 @@ export const Contact = () => {
       {contactData.map((contact) => (
         <div key={contact.id}>
           <h2>{contact.title}</h2>
-          <h3 className="text-orange font-semibold text-4xl">{contact.subtitle}</h3>
+          <h3 className="text-orange font-semibold text-4xl">
+            <Typewriter
+              options={{
+                strings: ["Let's talk", "Connect with us"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h3>
         </div>
       ))}
       <div className="w-full md:max-w-[520px] mx-auto flex flex-row justify-between  pt-9 text-2xl ">

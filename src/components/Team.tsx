@@ -3,9 +3,10 @@ import { teamData } from "../data";
 
 export const Team = () => {
   return (
-    <div className="container bg-dark pb-12 text-light">
+    <div className="bg-dark pb-12  text-light" >
+      <div className="container" data-aos="fade-up">
       {teamData.map((team) => (
-        <div key={team.id}>
+        <div key={team.id} className="sm:w-[500px]">
           <h2>{team.title}</h2>
           <p className="pt-6">{team.description}</p>
         </div>
@@ -15,6 +16,7 @@ export const Team = () => {
           meet the team
         </h3>
         <button>----</button>
+      </div>
       </div>
     </div>
   );
