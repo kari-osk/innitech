@@ -1,41 +1,60 @@
 import React, { useState } from "react";
 import { X, List } from "phosphor-react";
-import { Link } from "react-router-dom";
 
 export const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   const handleNav = () => {
-    setNav(!nav);
+    setNavbarOpen(!navbarOpen);
   };
 
   return (
-    <div className="flex justify-between items-center h-20 mx-auto px-4">
-      <h1>Inner Tech</h1>
-      <ul className="hidden md:flex">
-        <li className="p-4">About</li>
-        <li className="p-4">Services</li>
-        <li className="p-4">Work</li>
-        <li className="p-4">Contact</li>
-      </ul>
-      <div onClick={handleNav} className="block md:hidden">
-        {!nav ? <X size={24} /> : <List size={24} />}
+    <nav className="w-full shadow">
+      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div>
+          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <a href="javascript:void(0)">
+              <h2 className="text-2xl font-bold text-white">INNI TECH</h2>
+            </a>
+            <div className="md:hidden">
+              <button
+                className="p-2 text-dark rounded-md outline-none focus:border-dark focus:border"
+                onClick={() => setNavbarOpen(!navbarOpen)}
+              >
+                {navbarOpen ? <X size={24} /> : <List size={24} />}
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              navbarOpen ? "block" : "hidden"
+            }`}
+          >
+            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <li className="hover:font-bold">
+                <a href="javascript:void(0)">Home</a>
+              </li>
+              <li className="hover:font-bold">
+                <a href="javascript:void(0)">About</a>
+              </li>
+              <li className="hover:font-bold">
+                <a href="javascript:void(0)">Services</a>
+              </li>
+              <li className="hover:font-bold">
+                <a href="javascript:void(0)">work</a>
+              </li>
+
+              <li className="mt-3 space-y-2">
+                <a href="javascript:void(0)" className="text-orange font-bold">
+                  Book a meeting
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div
-        className={
-          !nav
-            ? "bg-light fixed left-0 top-0 w-[70%] h-screen border-r ease-in-out duration-500"
-            : "fixed left-[-100%] ease-in-out duration-200"
-        }
-      >
-        <h1 className="px-4 pt-8">Inner Tech</h1>
-        <ul className="pt-24 ">
-          <li className="p-4">About</li>
-          <li className="p-4">Services</li>
-          <li className="p-4">Work</li>
-          <li className="p-4">Contact</li>
-        </ul>
-      </div>
-    </div>
+    </nav>
   );
 };
