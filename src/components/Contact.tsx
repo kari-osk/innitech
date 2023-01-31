@@ -11,7 +11,7 @@ import Typewriter from "typewriter-effect";
 
 export const Contact = () => {
   return (
-    <div className="container bg-gray pt-12 pb-12">
+    <div id="contact" className="container bg-gray pt-12 pb-12" >
       {contactData.map((contact) => (
         <div key={contact.id}>
           <h2>{contact.title}</h2>

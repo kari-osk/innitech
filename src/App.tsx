@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef } from 'react'
 import './App.css'
 import { Navbar } from './components/Navbar'
 import { About } from './components/About'
@@ -10,15 +10,17 @@ import { Contact } from './components/Contact'
 import 'aos/dist/aos.css';
 
 function App() {
+const sectionRef = useRef({});
+
   return (
     <>
-    <Navbar />
-    <Hero />
-    <About />
-    <Services />
-    <Team /> 
-    <Tagline />
-    <Contact />
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <Team /> 
+      <Tagline />
+      <Contact />
     </>
     )
 }

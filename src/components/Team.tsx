@@ -3,7 +3,7 @@ import { teamData } from "../data";
 
 export const Team = () => {
   return (
-    <div className="bg-dark pb-12  text-light" >
+    <div id="team" className="bg-dark pb-12  text-light" >
       <div className="container" data-aos="fade-up">
       {teamData.map((team) => (
         <div key={team.id} className="sm:w-[500px]">
