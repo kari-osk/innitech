@@ -39,7 +39,7 @@ module.exports = {
       '9xl': '10.375rem',
     },
     colors: {
-      'dark': '#0F0E0E',
+      'dark': '#282728',
       'light': '#F0F0F0',
       'gray': '#C4C4C4',
       'orange': '#FE9B07',

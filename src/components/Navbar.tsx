@@ -38,19 +38,19 @@ export const Navbar = () => {
           >
             <ul className="sm:absolute  md:relative items-center font-bold justify-center sm:mt-6 md:mt-0 space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="hover:underline hover:decoration-4">
-              <Link  to="hero" spy={true} smooth={true} offset={-100} duration={1750} delay={200}>Home</Link>
+              <Link  to="hero" spy={true} smooth={true} offset={-100} duration={1750} delay={200}>home</Link>
               </li>
               <li className="hover:underline hover:decoration-4">
-              <Link  to="about" spy={true} smooth={true} offset={-100} duration={1750} delay={200}>About</Link>
+              <Link  to="about" spy={true} smooth={true} offset={-100} duration={1750} delay={200}>about</Link>
               </li>
               <li className="hover:underline hover:decoration-4">
-              <Link  to="services" spy={true} smooth={true} offset={10} duration={1750} delay={200}>Services</Link>
+              <Link  to="services" spy={true} smooth={true} offset={10} duration={1750} delay={200}>services</Link>
               </li>
               <li className="hover:underline hover:decoration-4">
-              <Link  to="team" spy={true} smooth={true} offset={-100} duration={1750} delay={200}>Team</Link>
+              <Link  to="team" spy={true} smooth={true} offset={-100} duration={1750} delay={200}>team</Link>
               </li>
               <li className="hover:underline hover:decoration-4">
-              <Link  to="contact" spy={true} smooth={true} offset={-100} duration={1750} delay={200}>Contact</Link>
+              <Link  to="contact" spy={true} smooth={true} offset={-100} duration={1750} delay={200}>contact</Link>
               </li>
             </ul>
           </div>

@@ -11,9 +11,9 @@ import Typewriter from "typewriter-effect";
 
 export const Contact = () => {
   return (
-    <div id="contact" className="container bg-gray pt-12 pb-12" >
+    <div id="contact" className=" bg-gray pt-12 pb-12" >
       {contactData.map((contact) => (
-        <div key={contact.id}>
+        <div key={contact.id} className="container">
           <h2>{contact.title}</h2>
           <h3 className="text-orange font-semibold text-4xl">
             <Typewriter
@@ -27,23 +27,23 @@ export const Contact = () => {
         </div>
       ))}
       <div className="w-full md:max-w-[520px] mx-auto flex flex-row justify-between  pt-9 text-2xl ">
-        <button className="">
+        <a href=""  target="_blank">
           <EnvelopeSimple />
-        </button>
-        <button>
+        </a>
+        <a href="http://linkedin.com/" target="_blank">
           <LinkedinLogo />
-        </button>
-        <button>
+        </a>
+        <a href="https://github.com/" target="_blank">
           <GithubLogo />
-        </button>
-        <button>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
           <InstagramLogo />
-        </button>
-        <button>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
           <YoutubeLogo />
-        </button>
+        </a>
       </div>
-      <h6 className="text-center pt-10 ">Inni Tech</h6>
+      <h6 className="text-sm text-center pt-10 uppercase">Inni Tech</h6>
     </div>
   );
 };

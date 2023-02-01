@@ -3,7 +3,7 @@ import { taglineData } from "../data";
 
 export const Tagline = () => {
   return (
-    <div className="container pt-12 pb-12 mx-auto md:max-w-[688px]">
+    <div className="container pt-16 pb-16 md:mt-10 md:mb-10 mx-auto md:max-w-[688px]">
       {taglineData.map((tagline) => (
         <div key={tagline.id}>
           <h2 className="text-3xl font-semibold leading-tight">{tagline.title}</h2>

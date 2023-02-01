@@ -8,6 +8,7 @@ import { Team } from './components/Team'
 import { Tagline } from './components/Tagline'
 import { Contact } from './components/Contact'
 import 'aos/dist/aos.css';
+import { Projects } from "./components/Projects"
 
 function App() {
 const sectionRef = useRef({});
@@ -18,7 +19,8 @@ const sectionRef = useRef({});
       <Hero />
       <About />
       <Services />
-      <Team /> 
+      {/* <Team />  */}
+      <Projects />
       <Tagline />
       <Contact />
     </>

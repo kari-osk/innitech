@@ -1,12 +1,12 @@
-import Logo from '../src/assets/logo.svg';
+import Logo from "../src/assets/logo.svg";
 
 export const heroData = [
   {
     id: 0,
     description:
       "Whether you're looking to create a new app, website, or software platform, Inni Tech has the expertise and experience to bring your vision to life.",
-    image: Logo
-    },
+    image: Logo,
+  },
 ];
 
 export const aboutData = [
@@ -83,4 +83,20 @@ export const contactData = [
     id: 0,
     title: "Contact INNI TECH",
   },
+];
+
+export const projectsData = [
+  {
+    id: 0,
+    title: "INNI TECH",
+    description:
+      "Innovative software solutions with a focus on the user experience. Our experienced team of designers, developers, and quality assurance professionals work together to bring our clients' projects to life, from conducting research to coding and testing. Our projects have had a significant impact on our clients' businesses, including increased customer engagement and improved financial management. We are dedicated to making a difference through our work.",
+      image: "https://images.unsplash.com/photo-1603539947678-cd3954ed515d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", 
+      alt: "Finacial mobile app",
+      image1: "https://plus.unsplash.com/premium_photo-1661691738042-7707cc9d5ecd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", 
+      alt1: "UX research",
+      image2: "https://images.unsplash.com/photo-1506097425191-7ad538b29cef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+      alt2: "Web application",
+      button: "learn more",
+  }
 ];
