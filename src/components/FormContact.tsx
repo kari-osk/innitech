@@ -1,17 +1,18 @@
 import { Formik, Form } from "formik";
 
-
 export const FormContact = () => {
+
+
 
   return (
     <div>
-        <h3>
+      <h3 className="p-8">
         Enter the information below and we'll get back to you as soon as we can.
       </h3>
 
       <Formik
         initialValues={{ name: "", email: "", phone: "" }}
-        onSubmit={(values) => alert(values.email)}
+        onSubmit={(values) => alert("Message sent")}
         validate={(values) => {
           const errors = {};
 
@@ -27,33 +28,45 @@ export const FormContact = () => {
       >
         {({ handleSubmit, handleChange, errors }) => (
           <Form onSubmit={handleSubmit} className="flex flex-col">
- 
-            <label htmlFor="">Full Name</label>
+            <label htmlFor="" className="p-1">
+              Full name
+            </label>
             <input
               type="text"
               name="name"
               placeholder="Full Name"
               onChange={handleChange}
+              className="p-1 rounded"
             />
-            <label htmlFor="">Email</label>
+            <label htmlFor="" className="p-1">
+              Email
+            </label>
             <input
               type="text"
               name="email"
               placeholder="email@example.com"
               onChange={handleChange}
+              className="p-1 rounded"
             />
-            <label htmlFor="">Phone number</label>
+            <label htmlFor="" className="p-1">
+              Phone number
+            </label>
             <input
               type="number"
               name="phone"
               placeholder="xxxx-xxxx"
               onChange={handleChange}
+              className="p-1 rounded"
             />
-            <button type="submit" >Submit</button>
+            <button
+              type="submit"
+              className="w-[50%] self-center bg-orange p-1 mt-5 rounded hover:border-dark"
+            >
+              Submit
+            </button>
           </Form>
         )}
       </Formik>
     </div>
   );
 };
-

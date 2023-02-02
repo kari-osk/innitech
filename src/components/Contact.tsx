@@ -13,6 +13,13 @@ import { FormContact } from "./FormContact";
 import ReactModal from "react-modal";
 
 const customStyles = {
+  overlay: {
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(0, 0, 0, 0.60)",
+  },
   content: {
     top: "50%",
     left: "50%",
@@ -20,7 +27,7 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    backgroundColor: "#FFF",
+    backgroundColor: "#ccc",
   },
 };
 
@@ -36,7 +43,7 @@ export const Contact = () => {
   };
 
   return (
-    <div id="contact" className=" bg-gray pt-12 pb-12">
+    <div id="contact" className=" bg-gray pt-12 pb-12 z-0">
       {contactData.map((contact) => (
         <div key={contact.id} className="container">
           {/* <h2>{contact.title}</h2> */}
@@ -51,7 +58,7 @@ export const Contact = () => {
           </h3>
         </div>
       ))}
-      <div className=" relative w-full md:max-w-[520px] mx-auto flex flex-row justify-between  pt-9 text-2xl ">
+      <div className="relative w-full md:max-w-[520px] mx-auto flex flex-row justify-between pt-9 text-2xl ">
         <button onClick={openModal}>
           <EnvelopeSimple />
         </button>
@@ -61,10 +68,17 @@ export const Contact = () => {
             style={customStyles}
             onRequestClose={closeModal}
           >
-            <button onClick={closeModal} className="w-full flex place-items-end">
-              <X className="r-0 hover:bg-orange border"/>
-            </button>
+            <div className="w-full flex justify-between">
+              <h1 className="uppercase">Inni Tech</h1>
+              <button
+                onClick={closeModal}
+                className=" place-items-end"
+              >
+                <X size={20} className="rounded hover:bg-dark hover:text-gray" />
+              </button>
+            </div>
             <FormContact />
+
           </ReactModal>
         ) : null}
         <a href="http://linkedin.com/" target="_blank">
