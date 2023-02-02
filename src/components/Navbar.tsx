@@ -47,7 +47,7 @@ export const Navbar = () => {
               <Link  to="services" spy={true} smooth={true} offset={10} duration={1750} delay={200}>services</Link>
               </li>
               <li className="hover:underline hover:decoration-4">
-              <Link  to="team" spy={true} smooth={true} offset={-100} duration={1750} delay={200}>team</Link>
+              <Link  to="team" spy={true} smooth={true} offset={-100} duration={1750} delay={200}>projects</Link>
               </li>
               <li className="hover:underline hover:decoration-4">
               <Link  to="contact" spy={true} smooth={true} offset={-100} duration={1750} delay={200}>contact</Link>

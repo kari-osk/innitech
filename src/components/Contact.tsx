@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { contactData } from "../data";
 import {
   EnvelopeSimple,
@@ -6,15 +6,40 @@ import {
   GithubLogo,
   InstagramLogo,
   YoutubeLogo,
+  X,
 } from "phosphor-react";
 import Typewriter from "typewriter-effect";
+import { FormContact } from "./FormContact";
+import ReactModal from "react-modal";
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "#FFF",
+  },
+};
 
 export const Contact = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
-    <div id="contact" className=" bg-gray pt-12 pb-12" >
+    <div id="contact" className=" bg-gray pt-12 pb-12">
       {contactData.map((contact) => (
         <div key={contact.id} className="container">
-          <h2>{contact.title}</h2>
+          {/* <h2>{contact.title}</h2> */}
           <h3 className="text-orange font-semibold text-4xl">
             <Typewriter
               options={{
@@ -26,10 +51,22 @@ export const Contact = () => {
           </h3>
         </div>
       ))}
-      <div className="w-full md:max-w-[520px] mx-auto flex flex-row justify-between  pt-9 text-2xl ">
-        <a href=""  target="_blank">
+      <div className=" relative w-full md:max-w-[520px] mx-auto flex flex-row justify-between  pt-9 text-2xl ">
+        <button onClick={openModal}>
           <EnvelopeSimple />
-        </a>
+        </button>
+        {showModal ? (
+          <ReactModal
+            isOpen={showModal}
+            style={customStyles}
+            onRequestClose={closeModal}
+          >
+            <button onClick={closeModal} className="w-full flex place-items-end">
+              <X className="r-0 hover:bg-orange border"/>
+            </button>
+            <FormContact />
+          </ReactModal>
+        ) : null}
         <a href="http://linkedin.com/" target="_blank">
           <LinkedinLogo />
         </a>

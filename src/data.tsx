@@ -12,7 +12,7 @@ export const heroData = [
 export const aboutData = [
   {
     id: 0,
-    title: "About INNI TECH",
+    title: "INNI TECH",
     description:
       "A company that specializes in creating user-centric digital experiences. Our team of experts in UI and UX research work closely with our clients to understand their unique needs and design software that is tailored to their specific audience.",
     image:
@@ -29,7 +29,7 @@ export const aboutData = [
 export const servicesData = [
   {
     id: 0,
-    title: "Services INNI TECH",
+    title: "INNI TECH",
   },
   {
     id: 1,
@@ -90,7 +90,7 @@ export const projectsData = [
     id: 0,
     title: "INNI TECH",
     description:
-      "Innovative software solutions with a focus on the user experience. Our experienced team of designers, developers, and quality assurance professionals work together to bring our clients' projects to life, from conducting research to coding and testing. Our projects have had a significant impact on our clients' businesses, including increased customer engagement and improved financial management. We are dedicated to making a difference through our work.",
+      "Innovative software solutions with a focus on the user experience. Our experienced team of designers, developers, and quality assurance professionals work together to bring our client's projects to life, from conducting research to coding and testing. Our projects have had a significant impact on our client's businesses, including increased customer engagement and improved financial management. We are dedicated to making a difference through our work.",
       image: "https://images.unsplash.com/photo-1603539947678-cd3954ed515d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", 
       alt: "Finacial mobile app",
       image1: "https://plus.unsplash.com/premium_photo-1661691738042-7707cc9d5ecd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", 

@@ -10,6 +10,7 @@ import { Contact } from './components/Contact'
 import 'aos/dist/aos.css';
 import { Projects } from "./components/Projects"
 
+
 function App() {
 const sectionRef = useRef({});
 
