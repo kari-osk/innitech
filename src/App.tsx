@@ -9,6 +9,7 @@ import { Tagline } from './components/Tagline'
 import { Contact } from './components/Contact'
 import 'aos/dist/aos.css';
 import { Projects } from "./components/Projects"
+import { FormikExample } from "./components/Formik"
 
 
 function App() {
@@ -17,6 +18,7 @@ const sectionRef = useRef({});
   return (
     <>
       <Navbar />
+      <FormikExample />
       <Hero />
       <About />
       <Services />

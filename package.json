@@ -21,7 +21,8 @@
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.7.0",
     "react-scroll": "^1.8.9",
-    "typewriter-effect": "^2.19.0"
+    "typewriter-effect": "^2.19.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",

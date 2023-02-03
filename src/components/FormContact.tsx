@@ -1,8 +1,13 @@
 import { Formik, Form } from "formik";
 
-export const FormContact = () => {
 
+type FormProps ={
+  name:string;
+  email:string;
+  phone:number;
+}
 
+export const FormContact = ({name, email, phone}: FormProps) => {
 
   return (
     <div>
@@ -27,6 +32,7 @@ export const FormContact = () => {
         }}
       >
         {({ handleSubmit, handleChange, errors }) => (
+          
           <Form onSubmit={handleSubmit} className="flex flex-col">
             <label htmlFor="" className="p-1">
               Full name
