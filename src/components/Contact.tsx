@@ -42,6 +42,11 @@ export const Contact = () => {
     setShowModal(false);
   };
 
+  const handleClick =() => {
+    alert("Our team will be in touch soon.")
+    setShowModal(false);
+  }
+
   return (
     <div id="contact" className=" bg-gray pt-12 pb-12 z-0">
       {contactData.map((contact) => (
@@ -77,7 +82,7 @@ export const Contact = () => {
                 <X size={20} className="rounded hover:bg-dark hover:text-gray" />
               </button>
             </div>
-            <FormContact />
+            <FormContact onClick={handleClick}/>
 
           </ReactModal>
         ) : null}

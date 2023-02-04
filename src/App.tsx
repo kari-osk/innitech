@@ -12,13 +12,13 @@ import { Projects } from "./components/Projects"
 import { FormikExample } from "./components/Formik"
 
 
+
 function App() {
 const sectionRef = useRef({});
 
   return (
     <>
       <Navbar />
-      <FormikExample />
       <Hero />
       <About />
       <Services />
