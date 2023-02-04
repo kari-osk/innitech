@@ -31,12 +31,12 @@ export const FormContact = (Props: FormProps) => {
         const { errors, touched, isValid, dirty } = formik;
         return (
           <div>
-            <h2 className="p-8">
+            <h2 className="p-3 md:p-8">
               Fill out the details below and we'll get back to you soon.
             </h2>
             <Form >
               <div className="flex flex-col p-2">
-                <label htmlFor="name">Full Name</label>
+                <label className="pl-2 pb-2" htmlFor="name">Full Name</label>
                 <Field
                   type="text"
                   name="name"
@@ -52,7 +52,7 @@ export const FormContact = (Props: FormProps) => {
               </div>
 
               <div className="flex flex-col p-2">
-                <label htmlFor="email">Email</label>
+                <label className="pl-2 pb-2" htmlFor="email">Email</label>
                 <Field
                   type="email"
                   name="email"
@@ -68,7 +68,7 @@ export const FormContact = (Props: FormProps) => {
               </div>
 
               <div className="flex flex-col p-2">
-                <label htmlFor="phone">Phone number</label>
+                <label className="pl-2 pb-2" htmlFor="phone">Phone number</label>
                 <Field
                   type="phone"
                   name="phone"
