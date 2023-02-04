@@ -21,8 +21,6 @@ export const aboutData = [
     image1:
       "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     alt1: "Woman and men siting in from a monitor showing code",
-    image2: "",
-    alt2: "",
   },
 ];
 
@@ -73,7 +71,7 @@ export const teamData = [
 export const taglineData = [
   {
     id: 0,
-    title: "From challenges to solutions, with the power of human creativity",
+    title: "From challenges to solutions, with the power of human creativity.",
     button: "Book a meeting",
   },
 ];

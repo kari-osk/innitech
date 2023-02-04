@@ -7,7 +7,7 @@ export const Tagline = () => {
       {taglineData.map((tagline) => (
         <div key={tagline.id}>
           <h2 className="text-3xl font-semibold leading-tight">{tagline.title}</h2>
-          <button className="h-12 w-[218px] mt-6 bg-dark rounded-3xl text-light">{tagline.button}</button>
+          {/* <button className="h-12 w-[218px] mt-6 bg-dark rounded-3xl text-light">{tagline.button}</button> */}
         </div>
       ))}
     </div>
