@@ -4,7 +4,7 @@ export const heroData = [
   {
     id: 0,
     description:
-      "Whether you're looking to create a new app, website, or software platform, Inni Tech has the expertise and experience to bring your vision to life.",
+      "Whether you're looking to create a new app, website or software platform, Inni Tech has the expertise and experience to bring your vision to life.",
     image: Logo,
   },
 ];

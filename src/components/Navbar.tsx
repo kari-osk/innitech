@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { X, List } from "phosphor-react";
-
 import {Link } from "react-scroll"
 
 

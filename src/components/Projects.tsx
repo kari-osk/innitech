@@ -10,11 +10,12 @@ export const Projects = () => {
         </h3>
         {projectsData.map((project) => (
           <div key={project.id} className="pt-2" >
-            <section className="md:max-w-[586px]" data-aos="fade-right">
+            <section className="w-full" data-aos="fade-right">
               <h2>{project.title}</h2>
-              <p className="pt-6 leading-7 mx-auto mb-12 sm:w-[586px] md:text-xl ">{project.description}</p>
+              {/* <p className="pt-6 leading-7 mx-auto mb-12 sm:w-[586px] md:text-xl ">{project.description}</p> */}
+              <p className="flex item-center pt-6 leading-7 mx-auto mb-12 sm:w-[586px] md:pt-12 md:text-xl ">{project.description}</p>
             </section>
-            <section className="w-full h-fit flex flex-col justify-center md:flex-row gap-4">
+            <section className="w-full h-fit flex flex-col justify-center md:py-6 md:flex-row gap-4">
               <img className="max-h-[200px]" src={project.image} alt={project.alt} data-aos="fade-right" />
               <img className="max-h-[200px]" src={project.image1} alt={project.alt1} data-aos="fade-right" data-aos-duration="1000"/>
               <img className="max-h-[200px]" src={project.image2} alt={project.alt2} data-aos="fade-right" data-aos-duration="2000"/>

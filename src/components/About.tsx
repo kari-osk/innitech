@@ -9,7 +9,7 @@ export const About = () => {
         <div key={about.id}>
           <div data-aos="fade-up">
             <h2 className="container pb-12 font-semibold ">{about.title}</h2>
-            <p className="p-2 mx-auto mb-12 sm:w-[586px] md:text-xl ">
+            <p className="p-2 mx-auto mb-12 sm:w-[586px] md:text-xl">
               {about.description}
             </p>
           </div>
