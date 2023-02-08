@@ -31,7 +31,7 @@ export const Navbar = () => {
         </div>
         <div>
           <div
-            className={` flex-1 justify-self-center  md:block md:pb-0 ${
+            className={` flex-1 justify-self-center md:block md:pb-0 ${
               navbarOpen ? "block" : "hidden"
             }`}
           >
