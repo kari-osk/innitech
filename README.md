@@ -23,4 +23,4 @@ Com intuito de estudar ReactJs, criei a página responsiva de uma empresa que de
 
 Visite a página [Link](https://kari-osk.github.io/innitech/)
 
-* Todas as fotos são do [unsplash](https://unsplash.com/pt-br)
+[^1]: Todas as fotos são do [unsplash](https://unsplash.com/pt-br)
