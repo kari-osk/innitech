@@ -48,7 +48,7 @@ export const Contact = () => {
   }
 
   return (
-    <div id="contact" className=" bg-gray pt-12 pb-12 z-0">
+    <div id="contact" className="w-full bg-gray pt-12 pb-12 z-0">
       {contactData.map((contact) => (
         <div key={contact.id} className="container">
           {/* <h2>{contact.title}</h2> */}
