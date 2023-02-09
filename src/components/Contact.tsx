@@ -63,7 +63,7 @@ export const Contact = () => {
           </h3>
         </div>
       ))}
-      <div className="relative w-full md:max-w-[520px] mx-auto flex flex-row justify-between pt-9 text-2xl ">
+      <div className="container relative w-full md:max-w-[520px] mx-auto flex flex-row justify-between pt-9 text-2xl ">
         <button onClick={openModal}>
           <EnvelopeSimple />
         </button>
@@ -86,7 +86,7 @@ export const Contact = () => {
 
           </ReactModal>
         ) : null}
-        <a href="http://linkedin.com/" target="_blank">
+        <a href="http://linkedin.com/" target="_blank" >
           <LinkedinLogo />
         </a>
         <a href="https://github.com/" target="_blank">
@@ -99,7 +99,7 @@ export const Contact = () => {
           <YoutubeLogo />
         </a>
       </div>
-      <h6 className="text-sm text-center pt-10 uppercase">Inni Tech</h6>
+      <h6 className="text-sm text-center pt-10 uppercase">© Inni Tech</h6>
     </div>
   );
 };
