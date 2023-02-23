@@ -17,7 +17,7 @@ export const Navbar = () => {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <Link  to="hero" spy={true} smooth={true} offset={50} duration={500}>
-              <h2 className="text-2xl font-bold text-white">INNI TECH</h2>
+              <h2 className="text-2xl font-bold">INNI TECH</h2>
             </Link>
             <div className="md:hidden">
               <button
