@@ -1,6 +1,5 @@
 import React from "react";
 import { heroData } from "../data";
-import bg from "../assets/bg.svg";
 import bg1 from "../assets/bg1.svg";
 import {ArrowDown, ArrowDownRight} from "phosphor-react"
 import { Link } from "react-scroll"

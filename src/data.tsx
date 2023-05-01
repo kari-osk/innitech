@@ -1,4 +1,9 @@
 import Logo from "../src/assets/logo.svg";
+import Team from "../src/assets/team.webp";
+import Team_1 from "../src/assets/team_1.webp";
+import Ux from "../src/assets/ux.webp";
+import Web from "../src/assets/web.webp";
+import Mobile from "../src/assets/Mobile.webp";
 
 export const heroData = [
   {
@@ -15,12 +20,10 @@ export const aboutData = [
     title: "INNI TECH",
     description:
       "A company that specializes in creating user-centric digital experiences. Our team of experts in UI and UX research work closely with our clients to understand their unique needs and design software that is tailored to their specific audience.",
-    image:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    alt: "People working with computers",
-    image1:
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    alt1: "Woman and men siting in from a monitor showing code",
+    image: Team,
+    alt: "People working with computers. Unsplash image",
+    image1: Team_1,
+    alt1: "Woman and men siting in from a monitor showing code. Unsplash image",
   },
 ];
 
@@ -89,12 +92,12 @@ export const projectsData = [
     title: "INNI TECH",
     description:
       "Innovative software solutions with a focus on the user experience. Our experienced team of designers, developers, and quality assurance professionals work together to bring our client's projects to life, from conducting research to coding and testing. Our projects have had a significant impact on our client's businesses, including increased customer engagement and improved financial management. We are dedicated to making a difference through our work.",
-      image: "https://images.unsplash.com/photo-1603539947678-cd3954ed515d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", 
-      alt: "Finacial mobile app",
-      image1: "https://plus.unsplash.com/premium_photo-1661691738042-7707cc9d5ecd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", 
-      alt1: "UX research",
-      image2: "https://images.unsplash.com/photo-1506097425191-7ad538b29cef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-      alt2: "Web application",
-      button: "learn more",
-  }
+    image: Mobile,
+    alt: "Finacial mobile app. Unsplash image",
+    image1: Ux,
+    alt1: "UX research. Unsplash image",
+    image2: Web,
+    alt2: "Web application. Unsplash image",
+    button: "learn more",
+  },
 ];
