@@ -1,5 +1,5 @@
 <h1>Inni Tech</h1>
-<p>Projeto criado com ReactJS</p>
+<p>Projeto criado com React JS e Tailwind CSS</p>
 <br>
 
 <p>
